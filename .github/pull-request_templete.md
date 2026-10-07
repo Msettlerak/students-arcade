@@ -1,4 +1,4 @@
-<!--
+<!-- 
 Instructions for Contributors: 
 Please ensure all items are completed and checked off before submitting your pull request. 
 -->
@@ -10,13 +10,16 @@ Please ensure all items are completed and checked off before submitting your pul
 - [ ] Changes are tightly focused on this specific issue.
 - [ ] Preserved the MIT license and existing attribution.
 
-### 2. Plugin Requirements
-- [ ] **File Location:** Verified the plugin files are placed in the correct directory.
-- [ ] **Metadata:** Included all required plugin metadata.
-- [ ] **Execution Logic:** Implemented and tested the `run()` function.
+### 2. Plugin Structure & Requirements
+- [ ] **File Location:** Placed the plugin file inside the `plugins/` directory.
+- [ ] **Filename:** Verified the filename is unique.
+- [ ] **Metadata:** Explicitly defined `AUTHOR` and `APP_NAME` variables.
+- [ ] **Execution Logic:** Defined the `run()` function to return or print a readable result.
+- [ ] **Standard Library:** Used only the Python standard library (unless otherwise approved).
+- [ ] **Import Guard:** Avoided running unintended code when the module is imported.
 
 ### 3. Verification & Security
-- [ ] **Execution Check:** Verified the result by running `python main.py` to confirm correct executable Python behavior.
+- [ ] **Execution Check:** Verified the result by running `python main.py` (avoided modifying `main.py` unless explicitly required).
 - [ ] **No-Credentials Check:** Confirmed that no credentials, tokens, private information, or unnecessary dependencies are included.
 
 ### 4. Pull-Request Description
